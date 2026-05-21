@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Artefacts ML
+artifacts/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# Données
+data/
+*.csv
+*.parquet
+
+# MLflow local
+mlruns/
+mlflow.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
