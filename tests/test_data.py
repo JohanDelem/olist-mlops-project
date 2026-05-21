@@ -12,7 +12,7 @@ def make_valid_df():
 
 def test_validate_schema_ok():
     df = make_valid_df()
-    validate_schema(df)  # ne doit pas lever d'exception
+    validate_schema(df)
 
 
 def test_validate_schema_missing_column():

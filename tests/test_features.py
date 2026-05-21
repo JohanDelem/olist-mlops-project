@@ -29,8 +29,8 @@ def test_add_olist_features_columns():
 
 def test_is_multi_item():
     df = add_olist_features(make_df())
-    assert df["is_multi_item"].iloc[0] == 0  # order_item_id=1
-    assert df["is_multi_item"].iloc[1] == 1  # order_item_id=2
+    assert df["is_multi_item"].iloc[0] == 0
+    assert df["is_multi_item"].iloc[1] == 1
 
 
 def test_log_price_positive():
@@ -41,4 +41,4 @@ def test_log_price_positive():
 def test_no_mutation():
     original = make_df()
     add_olist_features(original)
-    assert "freight_ratio" not in original.columns  # df.copy() dans la fonction
+    assert "freight_ratio" not in original.columns
